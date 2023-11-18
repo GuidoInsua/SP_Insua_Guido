@@ -1,0 +1,106 @@
+<!-- SP Guido Insua -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla Futbolitas y Profesionales (Guido)</title>
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+</head>
+<body>
+    <div id="spinner-container">
+        <div id="spinner"></div>
+      </div>
+
+    <div id="primerForm">
+        <h1 id="tituloForm">Formulario Lista</h1>
+
+        <br>
+
+        <div id="tabla"> 
+            <table id="tablaHeader">
+                <thead>
+                    <tr>
+                        <th class="colId" id="id">ID</th>
+                        <th class="colNombre" id="nombre">Nombre</th>
+                        <th class="colApellido" id="apellido">Apellido</th>
+                        <th class="colEdad" id="edad">Edad</th>
+                        <th class="colEquipo" id="equipo">Equipo</th>
+                        <th class="colPosicion" id="posicion">Posicion</th>
+                        <th class="colCantidadGoles" id="cantidadGoles">Cantidad Goles</th>
+                        <th class="colTitulo" id="titulo">Titulo</th>
+                        <th class="colFacultad" id="facultad">Facultad</th>
+                        <th class="colanoGraduacion" id="anoGraducaion">ano Graducaion</th>
+                        <th class="colModificar" id="modificar">Modificar</th>
+                        <th class="colEliminar" id="eliminar">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo"></tbody>
+            </table>
+        </div>
+
+        <br>
+        <div id="btnAgregar">
+            <button class="ultimo" id="agregar">Agregar Elemento</button>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div id="ABM">
+        <h1>Formulario ABM</h1>
+        <div id="entradas">
+            <label for="idAbm">Id:</label>
+            <input type="text" id="idAbm" disabled>
+            <br>
+            <label for="nombreAbm">Nombre:</label>
+            <input type="text" id="nombreAbm">
+            <br>
+            <label for="apellidoAbm">Apellido:</label>
+            <input type="text" id="apellidoAbm">
+            <br>
+            <label for="edadAbm">Edad:</label>
+            <input type="text" id="edadAbm">
+            <br>
+            <label for="tipoAbm">Tipo:</label>
+            <select id="tipoAbm">
+                <option value="futbolista">Futbolista</option>
+                <option value="profesional">Profecional</option>
+            </select>
+            <br>
+            <div id="datosFutbolista">
+                <label for="equipoAbm">Equipo:</label>
+                <input type="text" id="equipoAbm">
+                <br>
+                <label for="posicionAbm">Posicion:</label>
+                <input type="text" id="posicionAbm">
+                <br>
+                <label for="cantidadGolesAbm">Cantidad Goles:</label>
+                <input type="text" id="cantidadGolesAbm">
+                <br>
+            </div>
+            <div id="datosProfesional">
+                <label for="tituloAbm">Titulo:</label>
+                <input type="text" id="tituloAbm">
+                <br>
+                <label for="facultadAbm">Facultad:</label>
+                <input type="text" id="facultadAbm">
+                <br>
+                <label for="anoGraduacionAbm">ano Graduacion:</label>
+                <input type="text" id="anoGraduacionAbm">
+                <br>
+            </div>
+        </div>
+        <div id="botonesABM">
+            <br>
+            <button id="agregarAbm">Agregar</button>
+            <button id="modificarAbm">Modificar</button>
+            <button id="eliminarAbm">Eliminar</button>
+            <button class="ultimo" id="cancelarAbm">Cancelar</button>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Codigo.js"></script>
+</body>
+</html>

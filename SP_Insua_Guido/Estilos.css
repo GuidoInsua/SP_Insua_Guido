@@ -1,0 +1,92 @@
+/* RPP Guido Insua*/
+
+body {
+    background-color: #c9721b; /* Cambia este valor al color que desees */
+}
+
+h1, #btnAgregar
+{
+    text-align: center;
+}
+
+#primerForm, #ABM
+{
+  border: 2px solid #000; /* Agrega un borde al div */
+  background-color: blanchedalmond;
+}
+
+#spinner-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+  }
+
+  #spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto; /* Centro el spinner en el contenedor */
+    margin-top: 45%; /* Puedes ajustar esto según tus necesidades */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+select, input, button
+{
+    margin-left: 10px; 
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+th 
+{
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+td.highlight 
+{
+    background-color: yellow;
+}
+table.custom 
+{
+    border: 2px solid #333;
+}
+td.rounded 
+{
+    border-radius: 10px;
+}
+
+.ultimo 
+{
+    margin-bottom: 20px;
+}
+  
+  
+  
+  
+
