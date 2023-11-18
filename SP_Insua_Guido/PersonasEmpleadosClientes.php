@@ -13,7 +13,7 @@ if($method == "OPTIONS") {
 sleep(3);
 
 if($method == "GET") {
-    echo '[{"id":1, "nombre":"Marcelo", "apellido":"Luque", "edad":45, "ventas":15000, "sueldo":2000},{"id":2, "nombre":"Ramiro", "apellido":"Escobar", "edad":35, "ventas": 6000, "sueldo": 1000},{"id":3, "nombre":"Facundo", "apellido":"Cairo", "edad":30, "ventas":500, "sueldo":15000},{"id":4, "nombre":"Fernando", "apellido":"Nieto", "edad":18, "compras":8000, "telefono":"152111131"},{"id":5, "nombre":"Manuel", "apellido":"Loza", "edad":20, "compras":50000, "telefono":"42040077"},{"id":666, "nombre":"Nicolas", "apellido":"Serrano", "edad":23, "compras":7000, "telefono":"1813181563"}]';
+    echo '[{"id":1, "nombre":"Marcelo", "apellido":"Luque", "edad":45, "titulo":"Ingeniero", "facultad":"UTN", "anoGraduacion":2002},{"id":2, "nombre":"Ramiro", "apellido":"Escobar", "edad":35, "titulo":"Medico", "facultad":"UBA", "anoGraduacion":20012},{"id":3, "nombre":"Facundo", "apellido":"Cairo", "edad":30, "titulo":"Abogado", "facultad":"UCA", "anoGraduacion":2017},{"id":4, "nombre":"Fernando", "apellido":"Nieto", "edad":18, "equipo":"Independiente", "posicion":"Delantero", "cantidadGoles":7},{"id":5, "nombre":"Manuel", "apellido":"Loza", "edad":20, "equipo":"Racing", "posicion":"Volante", "cantidadGoles":2},{"id":666, "nombre":"Nicolas", "apellido":"Serrano", "edad":23, "equipo":"Boca", "posicion":"Arquero", "cantidadGoles":0}]';     
     die();
 }
 
@@ -37,11 +37,11 @@ if($method == "POST") {
     $estJugador=1;
     $estProfesional=1;
 
-    if (isset($objeto['id'])==false || isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['ventas'])==false || isset($objeto['sueldo'])==false)   {
+    if (isset($objeto['id'])==false || isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['equipo'])==false || isset($objeto['posicion'])==false || isset($objeto['cantidadGoles'])==false)   {
         $estJugador=0;
     }
 
-    if (isset($objeto['id'])==false || isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['compras'])==false || isset($objeto['telefono'])==false)   {
+    if (isset($objeto['id'])==false || isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['titulo'])==false || isset($objeto['facultad'])==false || isset($objeto['anoGraduacion'])==false)   {
         $estProfesional=0;
     }
 
@@ -68,11 +68,11 @@ if($method == "PUT") {
     $estJugador=1;
     $estProfesional=1;
 
-    if (isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['ventas'])==false || isset($objeto['sueldo'])==false)  {
+    if (isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['equipo'])==false || isset($objeto['posicion'])==false || isset($objeto['cantidadGoles'])==false )  {
         $estJugador=0;
     }
 
-    if (isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['compras'])==false || isset($objeto['telefono'])==false)  {
+    if (isset($objeto['nombre'])==false || isset($objeto['apellido'])==false || isset($objeto['edad'])==false || isset($objeto['titulo'])==false || isset($objeto['facultad'])==false || isset($objeto['anoGraduacion'])==false )  {
         $estProfesional=0;
     }
    
